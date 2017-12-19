@@ -8,11 +8,11 @@
     
 	<link rel="stylesheet" type="text/css" href="css/estilosHome.css">
 	<link rel="stylesheet" type="text/css" href="css/gruposIndex.css">
+	<link rel="stylesheet" type="text/css" href="css/botones.css">
 	<link href="https://file.myfontastic.com/hUsvSK8s6MutdPKJHuW7TX/icons.css" rel="stylesheet">
-    <script type="text/javascript" src="js/menu.js">
-    </script>
-    <script type="text/javascript" src="js/mober_scroll.js">
-    </script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/mober_scroll.js"></script>
+    <script type="text/javascript" src="js/transformar.js"></script>
 	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1/themes/default/easyui.css">
     <script type="text/javascript" src="js/jquery-easyui-1/jquery.min.js"></script>
@@ -37,23 +37,15 @@
 		<nav class="dos" id='menu'> <!-- menús de navegación -->
 			<ul >
 				<li><a href="index.html">Home</a></li>
-				<li><a href="Simulador.html">Simulador</a></li>
-				<li><a href="Proyectos.html">Proyectos</a></li>
-				<li class="dropdown"><a class="dropbtn">Docentes UTPL  <samp class="icon-chevron-down"></samp></a>
+				<li><a href="#1">Que es RAM?</a></li>
+				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
 			    	<div class="dropdown-content">
-			      		<a href="DocentesIvestigacion.html">Docentes Ivestigacion</a>
-			      		<a href="BecaPostgrado.html">Becario Postgrado</a>
-			      		<a href="BecarioPrometeo.html">Becario Prometeo</a>
-			      		<a href="DocentesProfesores.html">Docentes Profesores</a>
-			      		<a href="DocentesContratado.html">Doctor Contratados</a>
-			      		<a href="DocentesInvitados.html">Docentes Invitados</a>
-			      		<a href="DocentesTutores.html">Docentes Tutores</a>
-			      		<a href="DocentesSinAsignar.html">Docentes Sin Asignar</a>
+			      		<a href="#22">ALGO 1</a>
+			      		<a href="#22">ALGO 2</a>
+			      		<a href="#22">ALGO 3</a>
 			        </div>
 			    </li>
-				<li><a href="Articulos.html">Articulos UTPL</a></li>
-				<li><a href="Books.html">Libros UTPL</a></li>
-				<li><a href="Login.html" style="font-size: 0.5em;"><samp class="icon-user"></samp><br>Sign in</a></li>
+				<li><a href="Simulador.html">SIMULADOR</a></li>
 				<li class="Buscador">
 					<div>
 			        <input class="easyui-searchbox" data-options="prompt:'Search...',searcher:doSearch" style="width:100%"></div>
@@ -64,22 +56,16 @@
 			<div id="mySidenav" class="sidenav">
 			  	<a class="tres" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-align: center"><samp class="icon-x"></samp></a>
 			  	<div class="uno" class="cuatro"><strong>
-			  	<a href="index.html">Home</a>
-				<a href="Grupos.html">Grupos de investigación</a>
-				<a href="Proyectos.html">Proyectos</a>
-				<li class="dropdown"><a class="dropbtn">Docentes UTPL</a>
+			  	<li><a href="index.html">Home</a></li>
+				<li><a href="#1">Que es RAM?</a></li>
+				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
 			    	<div class="dropdown-content">
-			      		<a href="DocentesIvestigacion.html">Investigadores</a>
-			      		<a href="BecaPostgrado.html">B. Postgrado</a>
-			      		<a href="BecarioPrometeo.html">B. Prometeo</a>
-			      		<a href="DocentesProfesores.html">Profesores</a>
-			      		<a href="DocentesContratado.html">Doc. Contratados</a>
-			      		<a href="DocentesInvitados.html">Docs. Invitados</a>
-			      		<a href="DocentesTutores.html">Docs. Tutores</a>
+			      		<a href="#22">ALGO 1</a>
+			      		<a href="#22">ALGO 2</a>
+			      		<a href="#22">ALGO 3</a>
 			        </div>
-                </li>
-			    <a href="Articulos.html">Articulos UTPL</a>
-				<a href="Books.html">Libros UTPL</a>
+			    </li>
+			    <li><a href="Simulador.html">SIMULADOR</a></li>
 				<a href="Login.html" style="margin-top: 7em; margin-right: 2em;"><samp class="icon-user"></samp> Sign in</a>
 				</strong>
 				</div>
@@ -90,7 +76,7 @@
 		</div>
 	</header>
 	
-	<section>
+	<section class="section">
         <div class="optionE-S">
             <div>
                 <img src="img/cs.png" alt="CSLectura" class="imgC">
@@ -124,64 +110,49 @@
         <br>
         <hr color="#2c3970" size=3 class="linea"><br><br><br>
         
-        <from>
-            Escritura<br>
-            <div>* Ingrese la palabra que desea almacenar </div>
-            <input type="text" name="String" placeholder="texto para tranformar" value=""><br>
-            <input type="button" name="button enviarpalabra" onclick="myFunction()" value="TRANSFORMAR PALABRA">
-            <p id="demo"></p>
-
-            <script>
-            function myFunction() {
-                var txt;
-                var person = prompt("Please enter your name:", "Harry Potter");
-                if (person == null || person == "") {
-                    txt = "User cancelled the prompt.";
-                } else {
-                    txt = "Hello " + person + "! How are you today?";
-                }
-                document.getElementById("demo").innerHTML = txt;
-            }
-            </script>
-            <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        <h2>Datos importantes</h2>
-        <p style="text-align: justify;padding:3px;">
-        La Unversidad Técnica Particular de Loja  Consta con 94 Grupos de investigación, los cuales existen algunas "Aprobado", es decir estan trabajando normalmente en los proyectos. "Creados", "Frimados" y "Dados de baja",los Grupos de uinvestigacion de la UTPL tratan de buscar nuevas formas de crear nuevas tecnologicas, formando parte de estos grupos esta docentes y uno que otro alumnos.</p>
-        
-        </from>
-	    
-	    
+        <div class="escritura">
+			<from action="" id="from">
+				<Strong>Escritura</Strong><br>
+				<div><Strong style="color: red;">*</Strong> Ingrese la palabra que desea almacenar</div><br>
+				<input type="text" name="text1" id="ti1" placeholder="texto para tranformar" value=""/>
+				<br><br><input type="button" name="button enviarpalabra" onclick="convert();" value="TRANSFORMAR PALABRA"/><br>
+				<p id="demo"></p>
+				<input id="ti2" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
+			</from>
+        </div>
+        <div class="lectura">
+			<from action="" id="from">
+				<Strong>Lectura</Strong><br>
+				<div><Strong style="color: red;">*</Strong> Ingrese en decimal la posición del registro de la palabra</div><br>
+				<input type="text" id="decimal" placeholder="Decimal entero 3 o 12" value="" maxlength="2"/>
+				<br><br><input type="button" name="button enviarbusqueda" onclick="search();" value="BUSCAR REGISTRO"/><br>
+				<p id="demo1"></p>
+				<input id="palabraBN" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
+			</from>
+        </div>
 	</section>
+	<aside class="aside">
+		<center>
+			<div>RAM 6116 2K x 8 BITS</div><br>
+               	<table id="results" border="3" style="width: 80%; background-color: white; color: black;">
+                	<thead>
+						<th><center>DIRECCION</center></th>
+						<th><center>REGISTRO</center></th> 
+					</thead>
+               		
+                </table>
+		</center>
+		
+	</aside>
 	
     
+<!--
     <article class="tags">
             <div style="padding:3px 6px;">
                 <input class="easyui-tagbox" value="UTPL,Loja,Áreas de investigación,Grupos,Investigación" style="width:100%; position: relative;"/>
             </div>
     </article>
+-->
    
     
     

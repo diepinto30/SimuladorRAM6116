@@ -1,0 +1,25 @@
+.article {
+	width: 55%;
+}
+
+.aside {
+	
+	margin-top: -27%;
+	background-color: #2c3970;
+	width: 31%;
+	height: auto;
+}
+
+.decimal {
+	width: 15%;
+}
+
+.Escritura{
+	display: block;
+	float: left;
+}
+.lectura{
+	float: right;
+	margin-top: -13%;
+	margin-right: 38%;
+}

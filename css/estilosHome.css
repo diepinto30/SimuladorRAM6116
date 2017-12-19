@@ -1,11 +1,12 @@
 * {
     border-radius: 4px;
-    font-family: "skia";
+    font-family: cursive;
+/*    font-family: "skia";*/
     line-height: 1.2em;
 }
 
 .linea {
-    width: 65%;
+    width: 62%;
     float: left;
 
 }
@@ -337,7 +338,7 @@ footer {
 
 
     footer {
-        background-color: #3C3B3B;
+        background-color: #2c3970;
         height: 7em;
         width: 100%;
         clear: both;

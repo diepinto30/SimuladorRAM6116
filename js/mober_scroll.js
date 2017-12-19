@@ -10,7 +10,5 @@ $(document).ready(function(){
               $('.icon-chevron-up').slideUp(300);
           } 
     });
-    
-    
            
 });
