@@ -77,18 +77,19 @@
 	</header>
 	
 	<section class="section">
+<!--      BUS DE CONTROL-->
         <div class="optionE-S">
             <div>
                 <img src="img/cs.png" alt="CSLectura" class="imgC">
-                <select>
-                  <option value="Seleccione…">Seleccione…</option>
-                  <option value="cs1">1</option>
-                  <option value="cs0">0</option>
-                </select>
+                <select id="mySelect">
+				  <option>Seleccione...</option>
+				  <option>1</option>
+				  <option>0</option>
+				</select>
             </div>
-            <div>
+            <div >
                 <img src="img/oe.png" alt="OEActivaChip" class="imgC">
-                <select>
+                <select id="mySelect2">
                   <option value="Seleccione…">Seleccione…</option>
                   <option value="oe1">1</option>
                   <option value="oe0">0</option>
@@ -96,14 +97,14 @@
             </div>
             <div>
                 <img src="img/we.png" alt="WEEscritura" class="imgC">
-                <select>
+                <select id="mySelect3">
                   <option value="Seleccione…">Seleccione…</option>
                   <option value="we1">1</option>
                   <option value="we0">0</option>
                 </select>
             </div>
         </div><br>
-        <button class="button button2" style="float: right; margin-right: 40%;" onclick="">ENVIAR</button>
+        <button type="button" style="float: right; margin-right: 40%;" onclick="myFunction()">VALIDAR</button>
             <script>
                 
             </script>
@@ -120,6 +121,15 @@
 				<input id="ti2" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
 			</from>
         </div>
+        
+        <div class="escritura">
+			<from action="" id="from">
+				<div><Strong style="color: red;">**</Strong> Ingrese letra a letra de la palabra tranformada...</div><br>
+				<input type="text" name="text1" id="letra" placeholder="texto para tranformar" value="" maxlength="1"/>
+				<br><br><input type="button" name="button enviarpalabra" onclick="converletra();" value="TRANSFORMAR PALABRA"/><br>
+				<p id="demo"></p>
+			</from>
+        </div>
         <div class="lectura">
 			<from action="" id="from">
 				<Strong>Lectura</Strong><br>
@@ -131,7 +141,7 @@
 			</from>
         </div>
 	</section>
-	<aside class="aside">
+	<aside class="aside" id="aside">
 		<center>
 			<div>RAM 6116 2K x 8 BITS</div><br>
                	<table id="results" border="3" style="width: 80%; background-color: white; color: black;">
@@ -143,7 +153,7 @@
                 </table>
 		</center>
 		
-	</aside>
+	</aside><br><br><br>
 	
     
 <!--
@@ -153,7 +163,9 @@
             </div>
     </article>
 -->
-   
+   <br><br><br><br><br><br><br><article>
+   <img src="img/RAM.png" alt=""><br><br><br>
+   </article>
     
     
     <footer class="footer">

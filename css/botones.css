@@ -4,9 +4,11 @@
 
 .aside {
 	
-	margin-top: -27%;
+	margin-top: -14.5%;
 	background-color: #2c3970;
 	width: 31%;
+	margin-left: 64.6%;
+	position: absolute;
 	height: auto;
 }
 
@@ -14,12 +16,16 @@
 	width: 15%;
 }
 
-.Escritura{
-	display: block;
-	float: left;
+.escritura{
+	display: none;
 }
 .lectura{
 	float: right;
-	margin-top: -13%;
+	margin-top: -2%;
 	margin-right: 38%;
+	display: none;
+}
+
+.imgC {
+	width: 30%;
 }

@@ -13,7 +13,23 @@ function convert() {
         txt = "No se a convertido nada!";
     }
     document.getElementById("demo").innerHTML = txt;
-};
+}
+
+function converletra() {
+  	var input = document.getElementById("letra").value;
+  	output.value = "";
+    var div;
+    var r = confirm('Su palabra a tranformar es "'+ input +'".');
+    if (r == true && (input.length > 0)) {
+        txt = "La palabra es la siguiente, OK!";
+		for (var i = 0; i < input.length; i++) {
+    		div += "0"+input[i].charCodeAt(0).toString(2) + " ";
+  		}
+    } else {
+        txt = "No se a convertido nada!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
 
 
 function search() {
@@ -30,3 +46,41 @@ function search() {
     document.getElementById("demo1").innerHTML = txt;
 	
 }
+
+function myFunction() {
+    var x = document.getElementById("mySelect").selectedIndex;
+    var y = document.getElementById("mySelect").options;
+	var x2 = document.getElementById("mySelect2").selectedIndex;
+    var y2 = document.getElementById("mySelect2").options;
+	var x3 = document.getElementById("mySelect3").selectedIndex;
+    var y3 = document.getElementById("mySelect3").options;
+    alert("Index: " + y[x].index + " is " + y[x].text +' OE ES:'+ y2[x2].text+ ' WE ES:'+ y3[x3].text);
+	// Escritura forma
+	if((y[x].index == 2) && (y2[x2].index == 1) && (y3[x3].index == 2)){
+		alert('La función de escritura se activará!');
+		$('.escritura').fadeIn("slow");
+		$('.lectura').fadeOut("slow");
+		document.getElementById('aside').style.marginTop = "-26.4%";
+	}
+	else
+	{
+		 alert('No es la función para activar <br> Intente de nuevo...!!!');
+	 }
+	
+	//Lectura forma
+	 if((y[x].index == 2) && (y2[x2].index == 2) && (y3[x3].index == 1)){
+		alert('La función de escritura se activará!');
+		$('.lectura').fadeIn("slow");
+		$('.escritura').fadeOut("slow");
+		document.getElementById('aside').style.marginTop = "-14.5%";
+		//document.getElementById('aside').style.marginTop = "-16%";
+	}
+	else
+	{
+		 alert('No es la función para activar <br> Intente de nuevo...!!!');
+		 }
+}
+
+
+
+
