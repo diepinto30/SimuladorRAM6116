@@ -1,3 +1,4 @@
+// funcion donde se convierte toda la palabra que ingresa el usuario
 function convert() {
   	var output = document.getElementById("ti2");
   	var input = document.getElementById("ti1").value;
