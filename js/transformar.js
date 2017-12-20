@@ -15,6 +15,17 @@ function convert() {
     document.getElementById("demo").innerHTML = txt;
 }
 
+function animacion(div){
+	var contenido = document.getElementById("esfera");
+	$("#esfera").addClass('esfera');
+	$("#direccion").addClass('direccion');
+	contenido.addEventListener('animationend', function(){
+		$("#esfera").removeClass('esfera');
+		$("#direccion").removeClass('direccion');
+		$("#results").append(div);
+	}, false);
+}
+
 var suma =0;
 function converletra() {
   	var input = document.getElementById("letra").value;
@@ -30,12 +41,16 @@ function converletra() {
 			div +=		'<th id="n'+suma+'">'+suma+'</th>';
 			div +=		'<th>'+"0"+input[i].charCodeAt(0).toString(2) +'</th>';
 			div += '</tr>';
-			$("#results").append(div);
+			animacion(div);
+			
+			
   		}
     } else {
         txt = "No se a convertido nada!";
     }
     document.getElementById("demo2").innerHTML = txt;
+	
+	
 }
 
 

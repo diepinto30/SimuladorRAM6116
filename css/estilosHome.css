@@ -11,6 +11,13 @@
 
 }
 
+.linea1 {
+    width: 59%;
+    float: left;
+	margin-left: 3%;
+}
+
+
 .txtheader {
     margin-top: 0.5em;
     border-style: solid;

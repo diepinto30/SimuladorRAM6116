@@ -1,0 +1,54 @@
+#esfera {	
+	left:34%; 
+	top:90%;
+	position: absolute ;
+	
+}
+.esfera{
+	animation: animarEsfera 10s;
+	animation: animarEsfera2 10s;
+	
+}
+
+
+
+@keyframes animarEsfera{
+	0%{left:34%; top:90%;}
+	30%{left:34%; top:108%;}
+	100%{left:34%; top:112%;}
+}
+
+@keyframes animarEsfera2{
+	100%{left:34%; top:120%;}
+	130%{left:34%; top:108%;}
+	140%{left:34%; top:112%;}
+}
+
+
+
+/*para le numero*/
+#direccion {	
+	left:63.1%; 
+	top:50%;
+	position: absolute;
+	
+}
+.direccion{
+	animation: animarEsfera3 10s;
+	animation: animarEsfera4 10s;
+	
+}
+
+
+
+@keyframes animarEsfera3{
+	0%{left:94%; top:10%;}
+	30%{left:54%; top:108%;}
+	100%{left:54%; top:112%;}
+}
+
+@keyframes animarEsfera4{
+	100%{left:54%; top:120%;}
+	130%{left:54%; top:108%;}
+	140%{left:54%; top:112%;}
+}
