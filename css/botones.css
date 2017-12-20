@@ -19,6 +19,14 @@
 .escritura{
 	display: none;
 }
+
+.escritura1{
+	float: left;
+	margin-left: 30%;
+	margin-top: -14%;
+	display: none;
+}
+
 .lectura{
 	float: right;
 	margin-top: -2%;
