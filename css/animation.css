@@ -5,7 +5,7 @@
 	
 }
 .esfera{
-	animation: animar 10s;
+	animation: animar 8s;
 	animation: animar2 8s;
 	
 }
@@ -23,6 +23,7 @@
 	130%{left:34%; top:108%;}
 	140%{left:34%; top:112%;}
 	160%{left:34%; top:152%;}
+	200%{left:34%; top:202%;}
 }
 
 
@@ -37,6 +38,7 @@
 .direccion{
 	animation: animar3 10s;
 	animation: animar4 10s;
+/*	animation: animar5 10s;*/
 	
 }
 
@@ -45,10 +47,13 @@
 @keyframes animar3{
 	0%{left:54%; top:10%;}
 	30%{left:54%; top:108%;}
-	100%{left:54%; top:112%;}
+	50%{left:54%; top:112%;}
 }
 
 @keyframes animar4{
-	100%{left:54%; top:120%;}
-	130%{left:54%; top:108%;}
+	50%{left:54%; top:120%;}
+	60%{left:54%; top:108%;}
+	80%{left:64%; top:50%;}
+	100%{left:64%; top:50%;}
 }
+

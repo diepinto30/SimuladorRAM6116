@@ -15,7 +15,7 @@ function convert() {
     document.getElementById("demo").innerHTML = txt;
 }
 
-function animacion(div, algo){
+function animacion(algo){
 	var contenido = document.getElementById("esfera");
 	$("#esfera").addClass('esfera');
 	$("#direccion").addClass('direccion');
@@ -23,8 +23,8 @@ function animacion(div, algo){
 		$("#esfera").removeClass('esfera');
 		$("#direccion").removeClass('direccion');
 		alert('Su registro es: "'+algo+'", fue guardado correctamente');
-		$("#results").append(div);
 	}, false);
+	
 }
 
 var suma =0;
@@ -34,7 +34,6 @@ function converletra() {
 	var txt;
     var div;
 	var algo;
-	suma = suma +1;
     var r = confirm('Su palabra a tranformar es "'+ input +'".');
     if (r == true && (input.length > 0)) {
         txt = "La letra ya esta guardada, OK!";
@@ -43,14 +42,18 @@ function converletra() {
 			div +=		'<th id="n'+suma+'">'+suma+'</th>';
 			div +=		'<th>'+"0"+input[i].charCodeAt(0).toString(2) +'</th>';
 			div += '</tr>';
+			suma = suma+1;
 			algo = ''+"0"+input[i].charCodeAt(0).toString(2)+'';
-			animacion(div, algo);
+			animacion(algo);
+			$("#results").append(div);
+			
 			
 			
   		}
     } else {
         txt = "No se a convertido nada!";
     }
+
     document.getElementById("demo2").innerHTML = txt;
 	
 	
