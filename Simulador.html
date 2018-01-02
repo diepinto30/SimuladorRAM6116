@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/gruposIndex.css">
 	<link rel="stylesheet" type="text/css" href="css/botones.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/help.css">
 	<link href="https://file.myfontastic.com/hUsvSK8s6MutdPKJHuW7TX/icons.css" rel="stylesheet">
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/mober_scroll.js"></script>
@@ -81,6 +82,9 @@
 <!--      BUS DE CONTROL-->
         <div class="optionE-S">
             <div>
+              	<div class="help-tip">
+					<p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+				</div>
                 <img src="img/cs.png" alt="CSLectura" class="imgC">
                 <select id="mySelect">
 				  <option>Seleccione...</option>
@@ -144,7 +148,10 @@
 			<from action="" id="from">
 				<Strong>Lectura</Strong><br>
 				<div><Strong style="color: red;">*</Strong> Ingrese en decimal la posición del registro de la palabra</div><br>
-				<input type="text" id="decimal" placeholder="Decimal entero 3 o 12" value="" maxlength="2"/>
+<!--				<input type="text" id="decimal" placeholder="Decimal entero 3 o 12" value="" maxlength="2"/>-->
+				<from>
+					<input  type="search" class="light-table-filter" data-table="order-table" placeholder="Busqueda de registros...">
+				</from>
 				<br><br><input type="button" name="button enviarbusqueda" onclick="search();" value="BUSCAR REGISTRO"/><br>
 				<p id="demo1"></p>
 				<input id="palabraBN" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
@@ -154,13 +161,15 @@
 	<aside class="aside" id="aside">
 		<center>
 			<div>RAM 6116 2K x 8 BITS</div><br>
-               	<table id="results" border="3" style="width: 80%; background-color: white; color: black;">
-                	<thead>
-						<th><center>DIRECCION</center></th>
-						<th><center>REGISTRO</center></th> 
-					</thead>
-               		
-                </table>
+              	<div id="tablas" style="width: 100%;">
+					<table id="results" border="3" style="width: 80%; background-color: white; color: black;"  class="order-table table">
+						<thead id="encabezado">
+							<th><center>DIRECCION</center></th>
+							<th><center>REGISTRO</center></th> 
+						</thead>
+
+					</table>
+				</div>
 		</center>
 	</aside>
     

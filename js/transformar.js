@@ -88,7 +88,7 @@ function myFunction() {
 	
 	// Escritura forma
 	if((y[x].index == 2) && (y2[x2].index == 1) && (y3[x3].index == 2)){
-		alert('La función de escritura se activará!');
+		alert('La función de ESCRITURA se activará!');
 		$('.escritura').fadeIn("slow");
 		$('.escritura1').fadeIn("slow");
 		$('.lectura').fadeOut("slow");
@@ -101,7 +101,7 @@ function myFunction() {
 	
 	//Lectura forma
 	 if((y[x].index == 2) && (y2[x2].index == 2) && (y3[x3].index == 1)){
-		alert('La función de escritura se activará!');
+		alert('La función de LECTURA se activará!');
 		$('.lectura').fadeIn("slow");
 		$('.escritura').fadeOut("slow");
 		 $('.escritura1').fadeOut("slow");
