@@ -95,11 +95,17 @@ w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row
 }
 .w3-panel{
 	position:relative;
-		width: 28em;
-		height: 1.5em;
-		margin-top:5em;
-		margin-left: -40em;
-	}
+	width: 38em;
+	height: 2em;
+	margin-top:5em;
+	margin-left: -40em;
+}
 .w3-border{border:1px solid #ccc!important}
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-round-large{border-radius:8px}
+
+.ptext {
+	font-size:13px;
+	margin-top:10px;
+	margin-left: 10px;
+}
