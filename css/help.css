@@ -1,6 +1,6 @@
 .help-tip{
-	margin-top: 7.8em;
-	margin-left: 54.5em;
+		margin-top: 7.3em;
+		margin-left: 51.8em;
     position: absolute;
     text-align: center;
     background-color: #2c3970;
@@ -66,8 +66,8 @@
 /* CSS animation */
 
 @-webkit-keyframes fadeIn {
-    0% { 
-        opacity:0; 
+    0% {
+        opacity:0;
         transform: scale(0.6);
     }
 
@@ -81,3 +81,25 @@
     0% { opacity:0; }
     100% { opacity:100%; }
 }
+
+
+/* para la nota  */
+
+w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-container,.w3-panel{padding:0.01em 16px}
+.w3-container {
+	height: 2em;
+	margin-top: 1em;
+	margin-right:34em;
+}
+.w3-panel{
+	position:relative;
+		width: 28em;
+		height: 1.5em;
+		margin-top:5em;
+		margin-left: -40em;
+	}
+.w3-border{border:1px solid #ccc!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-round-large{border-radius:8px}
