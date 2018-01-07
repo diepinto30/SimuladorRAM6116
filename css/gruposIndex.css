@@ -20,7 +20,7 @@ p {
 
 table {
     border-collapse: collapse;
-    
+
 }
 
 th, td {
@@ -29,7 +29,7 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
-table, td, th {    
+table, td, th {
     border: 1px solid #ddd;
     text-align: left;
 }
@@ -50,7 +50,7 @@ tr:hover{
     cursor: pointer;
     position: fixed;
     bottom: 20px;
-    right: 20px; 
+    right: 20px;
 }
 .menu-fixed {
         position: fixed;
@@ -68,7 +68,7 @@ tr:hover{
 #menus {
     background: #2c3970;
 }
-    
+
 
 
 #encabezado{
@@ -87,7 +87,7 @@ tr:hover{
 
 
 @media(min-width:1024px){
-    
+
     section {
         margin-top: 5%;
         width: 95%;
@@ -97,7 +97,7 @@ tr:hover{
         width: 33%;
 
     }
-    
+
     .menu-fixed {
         position: fixed;
         z-index: 1000;
@@ -106,7 +106,7 @@ tr:hover{
         top: 0;width: 100%;
         box-shadow: 0px 4px 3px rgba(0,0,0,.8);
     }
-    
+
 }
 
 

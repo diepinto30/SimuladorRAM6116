@@ -16,6 +16,7 @@ function convert() {
     document.getElementById("demo").innerHTML = txt;
 }
 
+// funcion donde se activa al css para la funcion de animacion
 function animacion(algo){
 	var contenido = document.getElementById("esfera");
 	$("#esfera").addClass('esfera');
@@ -23,9 +24,9 @@ function animacion(algo){
 	contenido.addEventListener('animationend', function(){
 		$("#esfera").removeClass('esfera');
 		$("#direccion").removeClass('direccion');
-		alert('Su registro es: "'+algo+'", fue guardado correctamente');
+    $(".datoTranformar").empty() // limpiar el contenido del "p"
+
 	}, false);
-	
 }
 
 var suma =0;
@@ -33,31 +34,29 @@ function converletra() {
   	var input = document.getElementById("letra").value;
   	//output.value = "";
 	var txt;
-    var div;
-	var algo;
+  var div;
+	var algo; // Almacena el valor tranformado
+  var dato;
     var r = confirm('Su palabra a tranformar es "'+ input +'".');
     if (r == true && (input.length > 0)) {
         txt = "La letra ya esta guardada, OK!";
 		for (var i = 0; i < input.length; i++) {
-    		div += '<tr>';
+    	div += '<tr>';
 			div +=		'<th id="n'+suma+'">'+suma+'</th>';
 			div +=		'<th>'+"0"+input[i].charCodeAt(0).toString(2) +'</th>';
 			div += '</tr>';
 			suma = suma+1;
 			algo = ''+"0"+input[i].charCodeAt(0).toString(2)+'';
-			animacion(algo);
+      animacion(algo);
 			$("#results").append(div);
-			
-			
-			
   		}
     } else {
         txt = "No se a convertido nada!";
     }
-
     document.getElementById("demo2").innerHTML = txt;
-	
-	
+    $(".datoTranformar").append(algo);
+    //alert('Su registro es: "'+algo+'", fue guardado correctamente');
+
 }
 
 
@@ -73,19 +72,18 @@ function search() {
         txt = "No se ha buscado ningun registro";
     }
     document.getElementById("demo1").innerHTML = txt;
-	
+
 }
 
 function myFunction() {
-    var x = document.getElementById("mySelect").selectedIndex;
-    var y = document.getElementById("mySelect").options;
+  var x = document.getElementById("mySelect").selectedIndex;
+  var y = document.getElementById("mySelect").options;
 	var x2 = document.getElementById("mySelect2").selectedIndex;
-    var y2 = document.getElementById("mySelect2").options;
+  var y2 = document.getElementById("mySelect2").options;
 	var x3 = document.getElementById("mySelect3").selectedIndex;
-    var y3 = document.getElementById("mySelect3").options;
-    //alert("Index: " + y[x].index + " is " + y[x].text +' OE ES:'+ y2[x2].text+ ' WE ES:'+ y3[x3].text);
-	
-	
+  var y3 = document.getElementById("mySelect3").options;
+
+  // obtener el dato del combox de seleccion
 	// Escritura forma
 	if((y[x].index == 2) && (y2[x2].index == 1) && (y3[x3].index == 2)){
 		alert('La función de ESCRITURA se activará!');
@@ -94,13 +92,7 @@ function myFunction() {
 		$('.lectura').fadeOut("slow");
 		document.getElementById('aside').style.marginTop = "-28.8%";
 	}
-	else
-	{
-		 alert('No es la función para activar Intente de nuevo...!!!');
-	 }
-	
-	//Lectura forma
-	 if((y[x].index == 2) && (y2[x2].index == 2) && (y3[x3].index == 1)){
+	else if((y[x].index == 2) && (y2[x2].index == 2) && (y3[x3].index == 1)){ //Lectura forma
 		alert('La función de LECTURA se activará!');
 		$('.lectura').fadeIn("slow");
 		$('.escritura').fadeOut("slow");
@@ -110,11 +102,7 @@ function myFunction() {
 	}
 	else
 	{
-		 alert('No es la función para activar Intente de nuevo...!!!');
+		 alert('No se activo nada, INTENTE DE NUEVO...!!!');
 	}
-	
+
 }
-
-
-
-

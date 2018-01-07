@@ -62,7 +62,7 @@
 				<li><a href="#1">Que es RAM?</a></li>
 				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
 			    	<div class="dropdown-content">
-			      		<a href="#22">ALGO 1</a>
+			      		<a href="#22">ALGO 1</a>Die
 			      		<a href="#22">ALGO 2</a>
 			      		<a href="#22">ALGO 3</a>
 			        </div>
@@ -137,28 +137,28 @@
 				<br><br><input type="button" name="button enviarpalabra" onclick="converletra();" value="TRANSFORMAR PALABRA"/><br>
 				<p id="demo2"></p>
 			</from>
-            <div id="esfera">
-				<img src="img/esfera.png" width="25" height="25"  >
-			</div>
-
-       		<div id="direccion">
-				<img src="img/n.png" width="25" height="25"  >
-			</div>
+        <div id="esfera">
+          <div class="datoTranformar"></div>
+  				<img src="img/esfera.png" width="25" height="25"  >
+  			</div>
+        <div id="direccion">
+          <img src="img/n.png" width="25" height="25"  >
+			 </div>
 
         </div>
 
         <div class="lectura">
-			<from action="">
-				<strong>Lectura</strong><br>
-				<div><strong style="color: red;">*</strong> Ingrese en decimal la posición del registro de la palabra</div><br>
-<!--				<input type="text" id="decimal" placeholder="Decimal entero 3 o 12" value="" maxlength="2"/>-->
-				<from>
-					<input  type="search" class="light-table-filter" data-table="order-table" placeholder="Busqueda de registros...">
-				</from>
-				<br><br><input type="button" name="button enviarbusqueda" onclick="search();" value="BUSCAR REGISTRO"/><br>
-				<p id="demo1"></p>
-				<input id="palabraBN" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
-			</from>
+    			<from action="">
+    				<strong>Lectura</strong><br>
+    				<div><strong style="color: red;">*</strong> Ingrese en decimal la posición del registro de la palabra</div><br>
+    <!--				<input type="text" id="decimal" placeholder="Decimal entero 3 o 12" value="" maxlength="2"/>-->
+    				<from>
+    					<input  type="search" class="light-table-filter" data-table="order-table" placeholder="Busqueda de registros...">
+    				</from>
+    				<br><br><input type="button" name="button enviarbusqueda" onclick="search();" value="BUSCAR REGISTRO"/><br>
+    				<p id="demo1"></p>
+    				<input id="palabraBN" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
+    			</from>
         </div>
 	</section>
 	<aside class="aside" id="aside">

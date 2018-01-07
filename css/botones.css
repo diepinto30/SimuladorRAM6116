@@ -3,8 +3,7 @@
 }
 
 .aside {
-	
-	margin-top: -14.5%;
+	margin-top: -16.5%;
 	background-color: #2c3970;
 	width: 31%;
 	margin-left: 64.6%;
@@ -38,3 +37,7 @@
 	width: 30%;
 }
 
+#datoTranformar {
+	border:1em solid #ccc!important;
+	width:3em;
+}

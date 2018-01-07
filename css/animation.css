@@ -1,45 +1,46 @@
-#esfera {	
-	left:34%; 
+#esfera {
+	left:34%;
 	top:92%;
-	position: absolute ;
-	
+	position: absolute;
+	/* animation: animar 10s;
+	animation: animar2 8s; */
 }
 .esfera{
-	animation: animar 8s;
+	animation: animar 10s;
 	animation: animar2 8s;
-	
+
 }
 
 
 
 @keyframes animar{
 	0%{left:34%; top:90%;}
-	30%{left:34%; top:108%;}
-	100%{left:34%; top:112%;}
+	20%{left:34%; top:108%;}
+	30%{left:34%; top:112%;}
 }
 
 @keyframes animar2{
-	100%{left:34%; top:120%;}
-	130%{left:34%; top:108%;}
-	140%{left:34%; top:112%;}
-	160%{left:34%; top:152%;}
-	200%{left:34%; top:202%;}
+	35%{left:34%; top:120%;}
+	45%{left:34%; top:108%;}
+	/* 55%{left:34%; top:112%;}
+	65%{left:34%; top:152%;}
+	100%{left:34%; top:202%;} */
 }
 
 
 
 /*para le numero*/
-#direccion {	
-	left:63.1%; 
+#direccion {
+	left:63.1%;
 	top:50%;
 	position: absolute;
-	
+
 }
 .direccion{
 	animation: animar3 10s;
 	animation: animar4 10s;
 /*	animation: animar5 10s;*/
-	
+
 }
 
 
@@ -56,4 +57,3 @@
 	80%{left:64%; top:50%;}
 	100%{left:64%; top:50%;}
 }
-
