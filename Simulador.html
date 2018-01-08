@@ -126,7 +126,7 @@
 				<input type="text" name="text1" id="ti1" placeholder="texto para tranformar" value=""/>
 				<br><br><input type="button" name="button enviarpalabra" onclick="convert();" value="TRANSFORMAR PALABRA"/><br>
 				<p id="demo"></p>
-				<input id="ti2" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly"><br><br><br>
+				<input id="ti2" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly"><br>
 			</from>
         </div>
 
@@ -139,7 +139,7 @@
 			</from>
         <div id="esfera">
           <div class="datoTranformar"></div>
-  				<img src="img/esfera.png" width="25" height="25"  >
+  				<!-- <img src="img/esfera.png" width="25" height="25"  > -->
   			</div>
         <div id="direccion">
           <img src="img/n.png" width="25" height="25"  >
@@ -176,18 +176,22 @@
 		</center>
 	</aside>
 
-<!--
-    <article class="tags">
-            <div style="padding:3px 6px;">
-                <input class="easyui-tagbox" value="UTPL,Loja,Áreas de investigación,Grupos,Investigación" style="width:100%; position: relative;"/>
-            </div>
-    </article>
--->
   <article>
-   <hr color="#2c3970" size="3" class="linea1"><br><br>
-   <img src="img/RAM.png" alt="" width="800" ><br><br><br>
+    <hr color="#2c3970" size="3" class="linea1"><br><br>
+    <img src="img/RAM.png" alt="" width="800" ><br><br><br>
    </article>
-
+   <div class="escritura" id="escritura">
+       <p><strong>(0)</strong></p>
+       <p style="margin-top:-0.3em;"><strong>(1)</strong></p>
+       <p><strong>(0)</strong></p>
+   </div>
+   <div class="lectura" id="lectura">
+     <p>
+       <img src="img/cs.png" alt="CSLectura" style="width: 2em;"><strong>(0)</strong>
+       <img src="img/oe.png" alt="OEActivaChip" style="width: 2em;"><strong>(0)</strong>
+       <img src="img/we.png" alt="WEEscritura" style="width: 2em;"><strong>(1)</strong>
+     </p>
+   </div>
 
     <footer class="footer">
         <div id="info">

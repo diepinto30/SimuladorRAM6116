@@ -21,15 +21,19 @@ function animacion(algo){
 	var contenido = document.getElementById("esfera");
 	$("#esfera").addClass('esfera');
 	$("#direccion").addClass('direccion');
+  $("#direccion").fadeIn();
 	contenido.addEventListener('animationend', function(){
 		$("#esfera").removeClass('esfera');
 		$("#direccion").removeClass('direccion');
-    $(".datoTranformar").empty() // limpiar el contenido del "p"
+    $(".datoTranformar").empty(); // limpiar el contenido del "p"
+    $("#direccion").fadeOut();
+
 
 	}, false);
 }
 
-var suma =0;
+var suma =439;
+var hexadecimal;
 function converletra() {
   	var input = document.getElementById("letra").value;
   	//output.value = "";
@@ -41,11 +45,13 @@ function converletra() {
     if (r == true && (input.length > 0)) {
         txt = "La letra ya esta guardada, OK!";
 		for (var i = 0; i < input.length; i++) {
+
+      hexadecimal = suma.toString(16).toUpperCase(); // tranformar decimal a hexadecimal
     	div += '<tr>';
-			div +=		'<th id="n'+suma+'">'+suma+'</th>';
+			div +=		'<th id="n'+hexadecimal+'">'+hexadecimal+'</th>';
 			div +=		'<th>'+"0"+input[i].charCodeAt(0).toString(2) +'</th>';
 			div += '</tr>';
-			suma = suma+1;
+      suma = suma+1;
 			algo = ''+"0"+input[i].charCodeAt(0).toString(2)+'';
       animacion(algo);
 			$("#results").append(div);
@@ -54,7 +60,7 @@ function converletra() {
         txt = "No se a convertido nada!";
     }
     document.getElementById("demo2").innerHTML = txt;
-    $(".datoTranformar").append(algo);
+    $(".datoTranformar").append('<p style="background-color:#ccc!important;width:4em;padding-top:0.3em;padding-button:0.5em;padding-left:0.5em">'+algo+'</p>');
     //alert('Su registro es: "'+algo+'", fue guardado correctamente');
 
 }

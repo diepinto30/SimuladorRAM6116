@@ -37,7 +37,24 @@
 	width: 30%;
 }
 
-#datoTranformar {
-	border:1em solid #ccc!important;
+.datoTranformar {
+	background-color:#ccc!important;
+	width:5em;
+	height:2em;
+	margin-top: -2.4em;
+}
+
+#escritura{
+	position: absolute;
+	/* background-color:#ccc!important; */
 	width:3em;
+	height:7em;
+	margin-top: -11.4%;
+	margin-left: 4em;
+}
+
+#lectura{
+	background-color:#ccc!important;
+	width:5em;
+	height:2em;
 }
