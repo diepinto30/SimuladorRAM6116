@@ -6,16 +6,20 @@
 	animation: animar2 8s; */
 }
 .esfera{
-	animation: animar 10s;
+	animation: animar 15s;
 
 }
 
 @keyframes animar{
-	0%{left:34%; top:90%;}
-	20%{left:34%; top:108%;}
-	30%{left:34%; top:112%;}
-	35%{left:34%; top:120%;}
-	45%{left:34%; top:105%;}
+	20%{left:34%; top:90%;}
+	40%{left:34%; top:108%;}
+	45%{left:34%; top:115%;}
+	55%{left:34%; top:132.5%;}
+	60%{left:51%; top:132.5%;}
+	63%{left:51%; top:132.5%;}
+	69%{left:63%; top:132.5%;}
+	96%{left:63%; top:52%;}
+	100%{left:78%; top:52%;}
 }
 
 /*para le numero*/
@@ -26,7 +30,7 @@
 
 }
 .direccion {
-	animation: animar2 10s;
+	animation: animar2 15s;
 /*	animation: animar5 10s;*/
 
 }
@@ -34,12 +38,12 @@
 	30%{left:63%; top:60%;}
 	30%{left:63%; top:95%;}
 	35%{left:54%; top:95%;}
-	45%{left:54%; top:108%;}
-	55%{left:54%; top:95%;}
+	40%{left:54%; top:110%;}
+	46%{left:54%; top:128%;}
+	55%{left:63%; top:128%;}
+	59%{left:63%; top:95%;}
 	65%{left:63%; top:95%;}
-	67%{left:63%; top:60%;}
-	68%{left:63%; top:51%;}
-	69%{left:63%; top:51%;}
+	70%{left:63%; top:51%;}
 	80%{left:68%; top:51%;}
 	100%{left:68%; top:48%;}
 }
@@ -49,13 +53,16 @@
 	position: absolute;
 }
 .escrituraA{
-	animation: animar3 10s;
+	animation: animar3 6s;
+	background-color:#ccc!important;
 }
 
 
 @keyframes animar3{
-	40%{left:26%; top:24.8%;}
-	60%{left:26%; top:24.8%;}
-	100%{left:26%; top:21.8%;}
+	0%{left:34%; top:80%;}
+	30%{left:35%; top:80%;}
+	40%{left:43%; top:80%;}
+	50%{left:43%; top:60%;}
+	100%{left:53%; top:60%;}
 
 }

@@ -16,7 +16,7 @@ function convert() {
     document.getElementById("demo").innerHTML = txt;
 }
 
-// funcion donde se activa al css para la funcion de animacion
+// funcion donde se activa al css para la funcion de animacion DE LA ESCRUTRA
 function animacion(algo){
 	var contenido = document.getElementById("esfera");
 	$("#esfera").addClass('esfera');
@@ -32,8 +32,11 @@ function animacion(algo){
     $(".datoTranformar").empty(); // limpiar el contenido del "p"
     $(".direccionHe").empty(); // limpiar el contenido del "p"
     $("#demo2").empty();
+    alert('SU LETRA FUE GUARDADA CORRECTAMENTE...');
 	}, false);
 }
+
+
 
 var suma =439;
 var hexadecimal;
