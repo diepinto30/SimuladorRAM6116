@@ -29,7 +29,7 @@
 		    <img class="logo" src="img/UTPL1B.png" alt="logo UTPL">
             <div class="textlogo">
                 <p>ARQUITECTURA DE COMPUTADORES</p>
-                <p>Sección Inteligencia Artificial Sección </p>
+                <p>Sección Inteligencia Artificial</p>
             </div>
 
         </div>
@@ -42,9 +42,8 @@
 				<li><a href="Queesram.html">Que es RAM?</a></li>
 				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
 			    	<div class="dropdown-content">
-			      		<a href="#22">ALGO 1</a>
-			      		<a href="#22">ALGO 2</a>
-			      		<a href="#22">ALGO 3</a>
+			      		<a href="CaracteristicasRAM.html">Caracteristicas RAM</a>
+			      		<a href="FuncionamientoRAM.html">Funcionamiento RAM</a>
 			        </div>
 			    </li>
 				<li><a href="Simulador.html">SIMULADOR</a></li>
@@ -54,33 +53,55 @@
 			    </li>
 			</ul>
 		</nav>
-		<div class="menu">
-			<div id="mySidenav" class="sidenav">
-			  	<a class="tres  closebtn" href="javascript:void(0)" onclick="closeNav()" style="text-align: center"><samp class="icon-x"></samp></a>
-			  	<div class="uno cuatro"><strong>
-			  	<li><a href="index.html">Home</a></li>
-				<li><a href="#1">Que es RAM?</a></li>
-				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
-			    	<div class="dropdown-content">
-			      		<a href="#22">ALGO 1</a>Die
-			      		<a href="#22">ALGO 2</a>
-			      		<a href="#22">ALGO 3</a>
-			        </div>
-			    </li>
-			    <li><a href="Simulador.html">SIMULADOR</a></li>
-				<a href="Login.html" style="margin-top: 7em; margin-right: 2em;"><samp class="icon-user"></samp> Sign in</a>
-				</strong>
-				</div>
-			</div>
-			<div class="uno" id="main">
-			  <span style="font-size:30px;cursor:pointer;" onclick="openNav()" id="menus">&#9776; Menú</span>
-			</div>
-		</div>
-	</header><br>
+	</header>
+  <section><br>
+    <div style="border: 2px solid #2c3970;position:sticky;">
+      <center><div><br>
+        <strong><h1>¿Qué es memoria RAM?</h1></strong>
+      </div></center><br>
+      <div class="txtRAM" style="text-align: justify;padding:12px;">
+        Lo primero que tenemos que tener en cuenta a que nos referimos a una memoria RAM, La denominada Random Acces Memory (RAM),
+        o Memoria de Acceso Aleatorio, es utilizada por el sistema para procesar toda la información que pasa por nuestra PC, en la
+        práctica podemos comprobar que a mayor cantidad de Memoria RAM más rápido será el procesamiento de los datos como para
+        procesos grandes de video, como el uso de videojuegos de última generación, edición de video, y demás [1].
+      </div><br>
+      <div class="txtRAM" style="text-align: justify;padding:12px;">
+        La memoria de acceso aleatorio (RAM) se usa en computadoras y otros dispositivos electrónicos como una forma de acceder y
+        almacenar datos. Se puede acceder a este tipo de memoria de computadora al azar y sin la necesidad de doblegarse a
+        direcciones de datos anteriores o siguientes. Sin embargo, la memoria RAM es volátil y solo se mantendrá mientras esté
+        encendida. Una vez que el sistema pierde potencia, pierde todos los datos almacenados en la memoria. La RAM ha evolucionado
+        con el tiempo a medida que los ingenieros intentan obtener una mejor velocidad y eficiencia a la hora de procesar grandes
+        volúmenes de información [2].<br><br>
+        La estructura lógica que posee la memoria RAM se la aprecia en la Figura 1. [3]:<br>
+        <center><img src="img/ETRAM.png" alt="estructura de la ram" width="40%">
+        <div><strong><i>Figura 1:</i></strong> ESTRUCRURA LOGICA, RAM [3]</div></center>
+      </div>
+      <div class="txtRAM" style="text-align: justify;padding:12px;">
+        La <strong>Figura 1</strong>, nos indica cada una de sus componentes que posee una RAM, para tener una idea más precisa sobre cada una de los
+        aspectos de la RAM; expondremos a continuación la función que está realizando cada una de sus partes, las cuales son la
+        siguientes:<br><br>
+        <strong>Memoria base:</strong> desde 0 hasta 640 KB (Kilobytes), es en esta zona dónde se almacena la mayoría de los programas que el usuario
+        utiliza.<br><br>
+        <strong>Memoria superior y reservada:</strong> de 640 a 1.024 MB (Megabytes), carga unas estructuras llamadas páginas de intercambio de
+        información y unos bloques de memoria llamados UMB.<br><br>
+        <strong>Bloques UMB (UpperMemory Blocks):</strong> se trata de espacios asignados para el sistema dentro de la memoria superior, pero debido
+        a la configuración de diversos dispositivos como el video, en algunos casos estos espacios quedan sin utilizar, por lo que
+        se comenzó a pensar en utilizarlos de modo funcional, lo que se logra con optimizadores de memoria, que se utilizaba estos
+        bloques para cargar ciertos Drivers (controladores que permiten al Hardware ser utilizado en el sistema).<br><br>
+        <strong>Memoria expandida:</strong> se trata de memoria paginada que se asigna a programas en memoria superior, la cual algunas veces no
+        se utilizaba debido a la configuración del equipo y con este método se puede utilizar.
+      </div>
+      <div style="text-align: justify;padding:32px;">
+        <strong>REFERENCIAS:</strong><br>
+        [1]	“Que es la memoria RAM ?” [Online]. Available: https://www.informatica-hoy.com.ar/hardware-pc-desktop/Que-es-la-memoria-RAM.php. <br>
 
-  <section>
+        [2]	S. Banerji, “Architectural Design of a RAM Arbiter.” <br>
+
+        [3]	S. Camacho, “MEMORIA RAM,” Junio 27, 2012. [Online]. Available: http://sandritamantenimiento2012.blogspot.com/2012/06/logica-de-la-memoria-ram-desde-las.html. <br>
 
 
+      </div>
+    </div>
   </section>
 
   <br>
@@ -96,8 +117,9 @@
               <div style="text-align:"> DIEGO PINTO
               <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color: white;">Licencia Creative Commons</a><br><img alt="Licencia Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
               </div>
+        </div>
       </div>
-      </div>
+
   </footer>
 
   <!--

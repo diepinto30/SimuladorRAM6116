@@ -26,60 +26,37 @@
 </head>
 <body>
 
-    <header>
+  <header>
         <div class="header1">
-<!--		    <img class="logo" src="img/utplA.png" alt="logo UTPL">-->
-		    <img class="logo" src="img/UTPL1B.png" alt="logo UTPL">
+  <!--		    <img class="logo" src="img/utplA.png" alt="logo UTPL">-->
+        <img class="logo" src="img/UTPL1B.png" alt="logo UTPL">
             <div class="textlogo">
                 <p>ARQUITECTURA DE COMPUTADORES</p>
-                <p>Sección Inteligencia Artificial Sección </p>
+                <p>Sección Inteligencia Artificial</p>
             </div>
 
         </div>
         <div class="txtheader">
             <p>Proceso de asignación de Memoria RAM de la 6116 (escritura y lectura)</p>
         </div>
-		<nav class="dos" id="menu"> <!-- menús de navegación -->
-			<ul >
-				<li><a href="index.html">Home</a></li>
-				<li><a href="Queesram.html">Que es RAM?</a></li>
-				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
-			    	<div class="dropdown-content">
-			      		<a href="#22">ALGO 1</a>
-			      		<a href="#22">ALGO 2</a>
-			      		<a href="#22">ALGO 3</a>
-			        </div>
-			    </li>
-				<li><a href="Simulador.html">SIMULADOR</a></li>
-				<li class="Buscador">
-					<div>
-			        <input class="easyui-searchbox" data-options="prompt:'Search...',searcher:doSearch" style="width:100%"></div>
-			    </li>
-			</ul>
-		</nav>
-		<div class="menu">
-			<div id="mySidenav" class="sidenav">
-			  	<a class="tres  closebtn" href="javascript:void(0)" onclick="closeNav()" style="text-align: center"><samp class="icon-x"></samp></a>
-			  	<div class="uno cuatro"><strong>
-			  	<li><a href="index.html">Home</a></li>
-				<li><a href="#1">Que es RAM?</a></li>
-				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
-			    	<div class="dropdown-content">
-			      		<a href="#22">ALGO 1</a>Die
-			      		<a href="#22">ALGO 2</a>
-			      		<a href="#22">ALGO 3</a>
-			        </div>
-			    </li>
-			    <li><a href="Simulador.html">SIMULADOR</a></li>
-				<a href="Login.html" style="margin-top: 7em; margin-right: 2em;"><samp class="icon-user"></samp> Sign in</a>
-				</strong>
-				</div>
-			</div>
-			<div class="uno" id="main">
-			  <span style="font-size:30px;cursor:pointer;" onclick="openNav()" id="menus">&#9776; Menú</span>
-			</div>
-		</div>
-	</header>
+    <nav class="dos" id="menu"> <!-- menús de navegación -->
+      <ul >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Queesram.html">Que es RAM?</a></li>
+        <li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
+            <div class="dropdown-content">
+                <a href="CaracteristicasRAM.html">Caracteristicas RAM</a>
+                <a href="FuncionamientoRAM.html">Funcionamiento RAM</a>
+              </div>
+          </li>
+        <li><a href="Simulador.html">SIMULADOR</a></li>
+        <li class="Buscador">
+          <div>
+              <input class="easyui-searchbox" data-options="prompt:'Search...',searcher:doSearch" style="width:100%"></div>
+          </li>
+      </ul>
+    </nav>
+  </header>
 
 	<section class="section">
 <!--      BUS DE CONTROL-->
@@ -173,6 +150,7 @@
     				<from>
     					<input  type="search" class="light-table-filter" data-table="order-table" placeholder="Busqueda de registros...">
     				</from><br><br>
+            <p id="demo3"></p>
     				<input id="palabraBN" placeholder="11010111" maxlength="8" readonly="readonly">
     			</from>
           <!-- PLAY AND STOP ANIMATION -->

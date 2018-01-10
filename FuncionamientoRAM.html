@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funcionamiento RAM 6116</title>
+    <link rel="shortcut icon" href="img/UTPLsmall.ico" type="image/vnd.microsoft.icon">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilosHome.css">
+	<link rel="stylesheet" type="text/css" href="css/gruposIndex.css">
+	<link rel="stylesheet" type="text/css" href="css/botones.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/help.css">
+	<link href="https://file.myfontastic.com/hUsvSK8s6MutdPKJHuW7TX/icons.css" rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/mober_scroll.js"></script>
+    <script type="text/javascript" src="js/transformar.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1/themes/default/easyui.css">
+    <script type="text/javascript" src="js/jquery-easyui-1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-easyui-1/jquery.easyui.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+  <header>
+      <div class="header1">
+<!--		    <img class="logo" src="img/utplA.png" alt="logo UTPL">-->
+      <img class="logo" src="img/UTPL1B.png" alt="logo UTPL">
+          <div class="textlogo">
+              <p>ARQUITECTURA DE COMPUTADORES</p>
+              <p>Sección Inteligencia Artificial </p>
+          </div>
+
+      </div>
+      <div class="txtheader">
+          <p>Proceso de asignación de Memoria RAM de la 6116 (escritura y lectura)</p>
+      </div>
+    <nav class="dos" id="menu"> <!-- menús de navegación -->
+      <ul >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Queesram.html">Que es RAM?</a></li>
+        <li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
+            <div class="dropdown-content">
+                <a href="CaracteristicasRAM.html">Caracteristicas RAM</a>
+                <a href="FuncionamientoRAM.html">Funcionamiento RAM</a>
+              </div>
+          </li>
+        <li><a href="Simulador.html">SIMULADOR</a></li>
+        <li class="Buscador">
+          <div>
+              <input class="easyui-searchbox" data-options="prompt:'Search...',searcher:doSearch" style="width:100%"></div>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section><br>
+    <div style="border: 2px solid #2c3970;position:sticky;">
+      <center><div>
+        <strong><h1>Caracteristicas RAM 6116</h1></strong>
+      </div></center><br><center>
+      <div style="margin-top:2em;margin-left:-43%;">
+        <img src="img/RAMCHIP.png" alt="RAM CHIP" width="18%">
+      </div>
+      <div style="position:sticky;margin-left:34%;margin-top:-25%;">
+        <table>
+          <thead>
+            <tr style="background-color:#d7ea33;">
+              <th>Componentes</th>
+              <th>Función</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>A0-A10</th>
+            <td>Líneas de direcciones</td>
+          </tr>
+          <tr>
+            <th>E/S0-E/S7</th>
+            <td>Entrada y Salida de datos</td>
+          </tr>
+          <tr>
+            <td><img src="img/cs.png" alt="CSLectura" style="width: 2em;"></td>
+            <td>Habilitador de la pastilla</td>
+          </tr>
+          <tr>
+            <td><img src="img/oe.png" alt="OEActivaChip" style="width: 2em;"></td>
+            <td>Habilitador de la pastilla</td>
+          </tr>
+          <tr>
+            <td><img src="img/we.png" alt="WEEscritura" style="width: 2em;"></td>
+            <td>Habilitador para la escritura</td>
+          </tr>
+          <tr>
+            <th>Vcc</th>
+            <td>Voltaje de alimentación +5.0 Volts</td>
+          </tr>
+          <tr>
+            <th>GND</th>
+            <td>Terminal de tierra 0.0 Volts</td>
+          </tr>
+
+        </table>
+      </div><br><br></center>
+      <div style="text-align: justify;padding:18px;">
+        En la operación de Lectura hay que tomar en cuenta lo siguiente, un dato será leído del dispositivo de almacenamiento RAM 6116, mediante la aplicación de un nivel alto en la terminal  es decir un uno (1) para que su salida sea cero (0), un nivel bajo en  es decir un cero (0) para que su salida sea uno (1), y un nivel bajo en  es decir un cero (0) para que su salida sea uno (1), con estas conexiones se dispone que se pueda leer la memoria RAM 6116, si se coloca un nivel alto en las terminales . y/o   las líneas de E/S y/o la pastilla 6116 se ponen en estado de alta impedancia, respectivamente.  posee la función de controlar la activación de la pastilla, la cual puede ser usada por un sistema con microprocesadores para la selección del dispositivo [4]. La terminal habilita las salidas, o las pone en estado de alta impedancia, la cual puede ser habilitada cada vez que el microprocesador requiera leer la memoria.
+        <br><br>
+        En cambio, para la operación de Escritura hay que tomar en cuenta lo siguiente, un dato es escrito en el dispositivo RAM 6116 mediante la aplicación de un nivel bajo en la terminal  es decir un cero (0) para que su salida sea uno (1), un nivel bajo en  es decir un cero (0) para que su salida sea uno (1), y un nivel alto en la terminal  es decir un uno (1) para que su salida sea cero (0). La terminal  al ser activa provoca que las terminales E/S de la memoria RAM 6116 se habiliten para aceptar la información, en estas condiciones la terminal  posee la opción de ser colocada en estado de alto bajo, para realizar así la operación de escritura [4].
+      </div>
+      <div style="text-align: justify;padding:32px;">
+        <strong>REFERENCIAS:</strong><br>
+        [4]	“Manejo de una memoria RAM 6116 - Esime-Ipn comunidad Geek.” [Online]. Available: http://esime-ipn.blogspot.com/2015/10/manejo-de-una-memoria-ram-6116.html.
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <footer class="footer">
+      <div id="info">
+          <div>
+              <img id="utpl" src="img/utpl2.png" alt="logo dos utpl">
+          </div>
+          <div id="txt">
+              San Cayetano Alto - Loja Ecuador - Línea Gratuita: 1800 8875 8875
+          </div>
+          <div id="dpto">
+              <div style="text-align:"> DIEGO PINTO
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color: white;">Licencia Creative Commons</a><br><img alt="Licencia Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+              </div>
+        </div>
+      </div>
+
+  </footer>
+
+  <!--
+    <div id="w" class="easyui-window" title="Un mensaje de Bienvenida" style="width:300px;height:90px;padding:10px;" >
+        El sito de la UTPL para el mundo
+    </div>
+  -->
+
+  <samp class="icon-chevron-up"></samp>
+
+</body>
+</html>
