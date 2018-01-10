@@ -46,9 +46,10 @@
 
 .direccionHe {
 	background-color:#ccc!important;
-	width:5em;
+	width:3em;
 	height:2em;
-	margin-top: -2.4em;
+	margin-left:-1.5em;
+
 }
 
 #escritura{
@@ -64,4 +65,8 @@
 	background-color:#ccc!important;
 	width:5em;
 	height:2em;
+}
+
+#parar:hover, #play:hover{
+	background-color: #e1eb2f;
 }

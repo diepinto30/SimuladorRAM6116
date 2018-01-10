@@ -12,9 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
 	<link rel="stylesheet" type="text/css" href="css/help.css">
 	<link href="https://file.myfontastic.com/hUsvSK8s6MutdPKJHuW7TX/icons.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/mober_scroll.js"></script>
     <script type="text/javascript" src="js/transformar.js"></script>
+    <script type="text/javascript" src="js/PlayANDstop.js"></script>
 	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1/themes/default/easyui.css">
     <script type="text/javascript" src="js/jquery-easyui-1/jquery.min.js"></script>
@@ -39,7 +41,7 @@
 		<nav class="dos" id="menu"> <!-- menús de navegación -->
 			<ul >
 				<li><a href="index.html">Home</a></li>
-				<li><a href="#1">Que es RAM?</a></li>
+				<li><a href="Queesram.html">Que es RAM?</a></li>
 				<li class="dropdown"><a class="dropbtn">RAM ESTATICA 6116  <samp class="icon-chevron-down"></samp></a>
 			    	<div class="dropdown-content">
 			      		<a href="#22">ALGO 1</a>
@@ -120,31 +122,45 @@
         <hr color="#2c3970" size="3" class="linea"><br><br><br>
 
         <div class="escritura">
-			<from action="" id="from">
-				<strong>Escritura</strong><br>
-				<div><strong style="color: red;">*</strong> Ingrese la palabra que desea almacenar</div><br>
-				<input type="text" name="text1" id="ti1" placeholder="texto para tranformar" value=""/>
-				<br><br><input type="button" name="button enviarpalabra" onclick="convert();" value="TRANSFORMAR PALABRA"/><br>
-				<p id="demo"></p>
-				<input id="ti2" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly"><br>
-			</from>
+    			<from action="" id="from">
+    				<strong>Escritura</strong><br>
+    				<div><strong style="color: red;">*</strong> Ingrese la palabra que desea almacenar</div><br>
+    				<input type="text" name="text1" id="ti1" placeholder="texto para tranformar" value=""/>
+    				<br><br><input type="button" name="button enviarpalabra" onclick="convert();" value="TRANSFORMAR PALABRA"/><br>
+    				<p id="demo"></p>
+    				<input id="ti2" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly"><br>
+    			</from>
         </div>
 
         <div class="escritura1">
-			<from action="">
-				<div><strong style="color: red;">**</strong> Ingrese letra a letra de la palabra tranformada...</div><br>
-				<input type="text" name="text4" id="letra" placeholder="texto para tranformar" value="" maxlength="1"/>
-				<br><br><input type="button" name="button enviarpalabra" onclick="converletra();" value="TRANSFORMAR PALABRA"/><br>
-				<p id="demo2"></p>
-			</from>
-        <div id="esfera">
-          <div class="datoTranformar"></div>
-  				<!-- <img src="img/esfera.png" width="25" height="25"  > -->
+    			<from action="">
+    				<div><strong style="color: red;">**</strong> Ingrese letra a letra de la palabra tranformada...</div><br>
+    				<input type="text" name="text4" id="letra" placeholder="texto para tranformar" value="" maxlength="1"/>
+    				<br><br><input type="button" name="button enviarpalabra" onclick="converletra();" value="TRANSFORMAR PALABRA"/><br>
+    				<p id="demo2"></p>
+    			</from>
+          <div id="esfera">
+            <div class="datoTranformar"></div>
+    				<!-- <img src="img/esfera.png" width="25" height="25"  > -->
   			  </div>
-        <div id="direccion">
+        <div id="direccion" style="display:none;">
           <div class="direccionHe"></div>
   				<!--   <img src="img/n.png" width="25" height="25"  > -->
   			  </div>
+          <div id="escrituraA">
+              <p class="0e"><strong>(0)</strong></p>
+              <p style="margin-top:-0.3em;" class="1e"><strong>(1)</strong></p>
+              <p class="0e1"><strong>(0)</strong></p>
+          </div>
+          <!-- PLAY AND STOP ANIMATION -->
+          <div style="margin-left:64%;">
+            <button type="button" class="btn btn-default" id="parar" onclick="parar()">
+              <div style="margin-top:0.2em;"> <img src="img/stop.png" alt="play"> </div>
+            </button>
+            <button type="button" class="btn btn-default" id="play" onclick="play()">
+              <div style="margin-top:0.2em;"><img src="img/play.png" alt="stop"> </div>
+            </button>
+          </div>
         </div>
 
 
@@ -160,6 +176,15 @@
     				<p id="demo1"></p>
     				<input id="palabraBN" placeholder=" Ejemplo: 11010111" maxlength="8" readonly="readonly">
     			</from>
+          <!-- PLAY AND STOP ANIMATION -->
+          <div style="margin-left:65%;">
+            <button type="button" class="btn btn-default" id="parar1" onclick="parar()">
+              <div style="margin-top:0.2em;"> <img src="img/stop.png" alt="play"> </div>
+            </button>
+            <button type="button" class="btn btn-default" id="play1" onclick="play()">
+              <div style="margin-top:0.2em;"><img src="img/play.png" alt="stop"> </div>
+            </button>
+          </div>
         </div>
 	</section>
 	<aside class="aside" id="aside">
@@ -181,12 +206,8 @@
     <hr color="#2c3970" size="3" class="linea1"><br><br>
     <img src="img/RAM.png" alt="" width="800" ><br><br><br>
    </article>
-   <div class="escritura" id="escritura">
-       <p><strong>(0)</strong></p>
-       <p style="margin-top:-0.3em;"><strong>(1)</strong></p>
-       <p><strong>(0)</strong></p>
-   </div>
-   <div class="lectura" id="lectura">
+
+   <div id="lectura">
      <p>
        <img src="img/cs.png" alt="CSLectura" style="width: 2em;"><strong>(0)</strong>
        <img src="img/oe.png" alt="OEActivaChip" style="width: 2em;"><strong>(0)</strong>
@@ -218,6 +239,6 @@
 
     <samp class="icon-chevron-up"></samp>
 
-    
+
 </body>
 </html>

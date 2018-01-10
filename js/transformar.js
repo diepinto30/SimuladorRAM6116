@@ -21,13 +21,17 @@ function animacion(algo){
 	var contenido = document.getElementById("esfera");
 	$("#esfera").addClass('esfera');
 	$("#direccion").addClass('direccion');
+  $("#escrituraA").addClass('escrituraA');
+  $("#direccion").fadeIn();
+
 	contenido.addEventListener('animationend', function(){
+    $("#direccion").fadeOut();
 		$("#esfera").removeClass('esfera');
 		$("#direccion").removeClass('direccion');
+    $("#escrituraA").removeClass('escrituraA');
     $(".datoTranformar").empty(); // limpiar el contenido del "p"
-    $(".direccion").empty();
-
-
+    $(".direccionHe").empty(); // limpiar el contenido del "p"
+    $("#demo2").empty();
 	}, false);
 }
 
@@ -60,7 +64,7 @@ function converletra() {
     }
     document.getElementById("demo2").innerHTML = txt;
     $(".datoTranformar").append('<p style="background-color:#ccc!important;width:4em;padding-top:0.3em;padding-button:0.5em;padding-left:0.5em">'+algo+'</p>');
-    $(".direccionHe").append('<p style="background-color:#ccc!important;width:4em;padding-top:0.3em;padding-button:0.5em;padding-left:0.5em">'+hexadecimal+'</p>');
+    $(".direccionHe").append('<p style="background-color:#ccc!important;width:2em;padding-top:0.3em;padding-button:0.5em;padding-left:0.5em">'+hexadecimal+'</p>');
     //alert('Su registro es: "'+algo+'", fue guardado correctamente');
 
 }
