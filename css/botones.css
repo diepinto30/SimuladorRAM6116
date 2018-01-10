@@ -44,6 +44,13 @@
 	margin-top: -2.4em;
 }
 
+.direccionHe {
+	background-color:#ccc!important;
+	width:5em;
+	height:2em;
+	margin-top: -2.4em;
+}
+
 #escritura{
 	position: absolute;
 	/* background-color:#ccc!important; */

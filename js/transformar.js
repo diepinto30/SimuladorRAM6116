@@ -21,12 +21,11 @@ function animacion(algo){
 	var contenido = document.getElementById("esfera");
 	$("#esfera").addClass('esfera');
 	$("#direccion").addClass('direccion');
-  $("#direccion").fadeIn();
 	contenido.addEventListener('animationend', function(){
 		$("#esfera").removeClass('esfera');
 		$("#direccion").removeClass('direccion');
     $(".datoTranformar").empty(); // limpiar el contenido del "p"
-    $("#direccion").fadeOut();
+    $(".direccion").empty();
 
 
 	}, false);
@@ -61,6 +60,7 @@ function converletra() {
     }
     document.getElementById("demo2").innerHTML = txt;
     $(".datoTranformar").append('<p style="background-color:#ccc!important;width:4em;padding-top:0.3em;padding-button:0.5em;padding-left:0.5em">'+algo+'</p>');
+    $(".direccionHe").append('<p style="background-color:#ccc!important;width:4em;padding-top:0.3em;padding-button:0.5em;padding-left:0.5em">'+hexadecimal+'</p>');
     //alert('Su registro es: "'+algo+'", fue guardado correctamente');
 
 }
